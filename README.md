@@ -1,8 +1,9 @@
+**IMPORTANT:** This is not better than Ninjabrain bot, nor does it pretend to contend with it. I made this because I wanted a calculator that used math I could realistically do quickly even without the bot. This calculator is not offcially approved by speedrun.com, and is primarily intended for my own personal use.
+
 # 🏹 NunYaBot Stronghold Calculator
 
 A fast and accurate **stronghold location calculator** for Minecraft, written in Python in less than 100 lines. With two good eye throws it can pinpoint the exact chunk consistently.
 
-**IMPORTANT:** This is not better than Ninjabrain bot, nor does it pretend to contend with it. I made this because I wanted a calculator that used math I could realistically do quickly even without the bot. This calculator is not offcially approved by speedrun.com, and is primarily intended for my own personal use.
 ---
 
 ## ✨ Features
