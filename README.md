@@ -26,5 +26,3 @@ A fast and accurate **stronghold location calculator** for Minecraft, written in
 6. To restart the process, press **Shift + Backspace**.
 
 ---
-
-## 🎬 Example Usage
