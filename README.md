@@ -18,8 +18,8 @@ A fast and accurate **stronghold location calculator** for Minecraft, written in
 1. **Throw your first Eye of Ender**
 2. Line up your camera **exactly with the eye** and press `F3 + C`  
    *(Perfect measurement is not required, but will greatly increase accuracy)*  
-3. Turn 90° from the direction of the first eye and run about 3 chunks, and repeat steps 1 & 2  
-   *(With perfect throws you don't need to go as far. With non-perfect throws going farther will increase accuracy.)* 
+3. Turn 90° from the direction of the first eye and run about 3 chunks, then repeat steps 1 & 2  
+   *(With perfect throws you don't need to go as far. With non-perfect throws, going farther will increase accuracy.)* 
 5. After the second throw, the calculator will instantly display:
    - 📍 **Coordinates of the stronghold**
    - 📏 **Distance from your current location**  
