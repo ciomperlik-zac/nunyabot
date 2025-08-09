@@ -1,7 +1,6 @@
-# 🏹 Minecraft Stronghold Calculator
+# 🏹 NunYaBot Stronghold Calculator
 
-A fast and accurate **stronghold location calculator** for Minecraft, powered by **systems of equations**.  
-With just **two good Eye of Ender throws**, it can pinpoint the exact **stronghold chunk** — no guessing, no wasted pearls.
+A fast and accurate **stronghold location calculator** for Minecraft, written in Python in less than 100 lines. With two good eye throws it can pinpoint the exact chunk consistently.
 
 ---
 
