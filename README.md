@@ -2,13 +2,13 @@
 
 A fast and accurate **stronghold location calculator** for Minecraft, written in Python in less than 100 lines. With two good eye throws it can pinpoint the exact chunk consistently.
 
+**IMPORTANT:** This is not better than Ninjabrain bot, nor does it pretend to contend with it. I made this because I wanted a calculator that used math I could realistically do quickly even without the bot. This calculator is not offcially approved by speedrun.com, and is primarily intended for my own personal use.
 ---
 
 ## ✨ Features
 - 🎯 **Exact chunk location** with only 2 throws  
-- 📐 Uses real math (systems of equations) for precision  
-- ⚡ **Instant calculation** after your second throw  
-- 📍 Shows both **distance** and **coordinates**  
+- 📐 Uses systems of equations to solve for stronghold location
+- ⚡ Automatically displays **distance** and **coordinates** after second throw
 - 🔄 Quick reset with **Shift + Backspace**  
 
 ---
@@ -24,12 +24,3 @@ A fast and accurate **stronghold location calculator** for Minecraft, written in
 5. To restart the process, press **Shift + Backspace**.
 
 ---
-
-## 🛠 Requirements
-- Minecraft Java Edition  
-- Eye of Ender (x2 minimum)  
-- Calculator running in the background  
-
----
-
-## 🎮 Why Use This?
