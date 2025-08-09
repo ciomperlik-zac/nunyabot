@@ -22,7 +22,7 @@ def handle_f3c():
     add_throw()
 
     if len(data) == 2:
-        locate_stronghold(data)
+        locate_stronghold()
 
 def add_throw():
     sleep(0.5)
@@ -39,20 +39,21 @@ def add_throw():
 
     print(f"Added eye throw: {cmd_data_list[0]}, {cmd_data_list[2]}, {cmd_data_list[3]}")
 
-def locate_stronghold(data):
-    x0, y0, angle0 = data[0]
-    x1, y1, angle1 = data[1]
+def locate_stronghold():
+    x0, z0, angle0 = data[0]
+    x1, z1, angle1 = data[1]
 
     m0 = math.tan(math.radians((angle0 % 360.0) * -1))
     m1 = math.tan(math.radians((angle1 % 360.0) * -1))
 
-    soln_x = (-m1 * x1 + y1 + m0 * x0 - y0) / (m0 - m1)
-    soln_y = m0 * (soln_x - x0) + y0
+    soln_x = (-m1 * x1 + z1 + m0 * x0 - z0) / (m0 - m1)
+    soln_z = m0 * (soln_x - x0) + z0
 
-    dist = math.sqrt((data[-1][0] - soln_x) ** 2 + (data[-1][1] - soln_y) ** 2)
+    dist = math.sqrt((data[-1][0] - soln_x) ** 2 + (data[-1][1] - soln_z) ** 2)
     
+    # Swap X and Z to account for Minecraft weird coordinate system.
     print(f"\nEstimated stronghold distance:\n\nOverwold: {dist:.1f}\nNether: {(dist/8):.1f}")
-    print(f"\nEstimated stronghold location:\n\nOverworld: {soln_y:.1f}, {soln_x:.1f}\nNether: {(soln_y/8):.1f}, {(soln_x/8):.1f}")
+    print(f"\nEstimated stronghold location:\n\nOverworld: {soln_z:.1f}, {soln_x:.1f}\nNether: {(soln_z/8):.1f}, {(soln_x/8):.1f}")
 
 def clear_data():
     global data
@@ -62,6 +63,6 @@ def clear_data():
     print_logo()
 
 keyboard.add_hotkey("f3+c", handle_f3c)
-keyboard.add_hotkey("shift+enter", lambda: locate_stronghold(data))
+keyboard.add_hotkey("shift+enter", locate_stronghold)
 keyboard.add_hotkey("shift+backspace", clear_data)
 keyboard.wait("shift+c")
